@@ -7,7 +7,7 @@ import transactionimg from "../assets/transaction_icon.png";
 
 const SideBar = () => {
   return (
-    <div className="md:flex flex-col hidden justify-between py-10 items-center text-white w-[25%] bg-black  rounded-[30px]">
+    <div className="lg:flex flex-col hidden justify-between py-10 items-center text-white w-[25%] bg-black  rounded-[30px]">
       <div className="flex flex-col justify-between gap-10">
         <h1 className="font-bold text-[36px]">Board.</h1>
         <div className="flex flex-col justify-between gap-4">

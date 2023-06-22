@@ -6,18 +6,18 @@ import camera from "../assets/camera.png";
 
 const Card = () => {
   return (
-    <div className="flex flex-wrap justify-start gap-6 md:gap-10 items-center">
-      <div className="flex flex-col text-black py-5 bg-[#DDEFE0] w-[180px] h-[100px] md:w-[221.053px] md:h-[120px] rounded-3xl px-6">
+    <div className="flex flex-wrap justify-center gap-2 sm:gap-6 md:gap-10 items-center">
+      <div className="flex flex-col text-black py-5 bg-[#DDEFE0] w-[140px] h-[100px] sm:w-[170px] md:w-[221.053px] md:h-[120px] rounded-3xl px-6">
         <div className="flex justify-end">
           <img src={camera} className="w-[26.4px] h-[24px]" alt="camera" />
         </div>
         <div className="flex flex-col justify-between">
-          <p className="font-lato text-[14px]">Total Revenues</p>
-          <h1 className="font-bold text-[18px] md:text-[24px]">$2,129,430</h1>
+          <p className="font-lato text-[12px] sm:text-[14px]">Total Revenues</p>
+          <h1 className="font-bold text-[16px] md:text-[24px]">$2,129,430</h1>
         </div>
       </div>
 
-      <div className="flex flex-col text-black py-5 bg-[#F4ECDD] w-[180px] h-[100px] md:w-[221.053px] md:h-[120px] rounded-3xl px-6">
+      <div className="flex flex-col text-black py-5 bg-[#F4ECDD] w-[140px] h-[100px] sm:w-[170px] md:w-[221.053px] md:h-[120px] rounded-3xl px-6">
         <div className="flex justify-end">
           <img
             src={transactions}
@@ -26,12 +26,14 @@ const Card = () => {
           />
         </div>
         <div className="flex flex-col justify-between">
-          <p className="font-lato text-[14px]">Total Transactions</p>
-          <h1 className="font-bold text-[18px] md:text-[24px]">$2,129,430</h1>
+          <p className="font-lato text-[11px] sm:text-[14px]">
+            Total Transactions
+          </p>
+          <h1 className="font-bold text-[16px] md:text-[24px]">$2,129,430</h1>
         </div>
       </div>
 
-      <div className="flex flex-col text-black py-5 bg-[#EFDADA] w-[180px] h-[100px] md:w-[221.053px] md:h-[120px] rounded-3xl px-6">
+      <div className="flex flex-col text-black py-5 bg-[#EFDADA] w-[140px] h-[100px] sm:w-[170px] md:w-[221.053px] md:h-[120px] rounded-3xl px-6">
         <div className="flex justify-end">
           <img src={likes} className="w-[23.298px] h-[24px]" alt="camera" />
         </div>
@@ -41,7 +43,7 @@ const Card = () => {
         </div>
       </div>
 
-      <div className="flex flex-col text-black py-5 bg-[#DEE0EF] w-[180px] h-[100px] md:w-[221.053px] md:h-[120px] rounded-3xl px-6">
+      <div className="flex flex-col text-black py-5 bg-[#DEE0EF] w-[140px] h-[100px] sm:w-[170px] md:w-[221.053px] md:h-[120px] rounded-3xl px-6">
         <div className="flex justify-end">
           <img src={people} className="w-[36.816px] h-[24px]" alt="camera" />
         </div>

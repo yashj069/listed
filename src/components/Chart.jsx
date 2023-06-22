@@ -14,7 +14,7 @@ const Chart = () => {
             </p>
           </div>
 
-          <div className="flex justify-between items-center gap-8">
+          <div className="flex justify-between items-center gap-3 sm:gap-8">
             <div className="flex justify-between items-center gap-5">
               <div className="rounded-full bg-[#E9A0A0] h-[10px] w-[10px]" />
               <p>Guest</p>
@@ -53,7 +53,7 @@ const Chart = () => {
           </div>
         </div>
 
-        <div className="flex justify-between -mt-[24px] items-center px-28 text-[#858585] text-[14px] font-lato">
+        <div className="flex justify-between -mt-[24px] items-center px-16 sm:px-28 text-[#858585] text-[11px] sm:text-[14px] font-lato">
           <p>Week 1</p>
           <p>Week 2</p>
           <p>Week 3</p>
