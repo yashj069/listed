@@ -6,7 +6,7 @@ import userimg from "../assets/image 1.png";
 const Header = () => {
   return (
     <div className="flex justify-between items-center gap-2">
-      <h1 className="text-black font-bold text-[18px] sm:text-[24px]">
+      <h1 className="text-black font-bold text-[21px] sm:text-[24px]">
         Dashboard
       </h1>
       <div className="flex justify-between items-center sm:px-10 gap-3 sm:gap-6">
