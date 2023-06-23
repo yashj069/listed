@@ -5,8 +5,8 @@ import down from "../assets/downarrow.png";
 
 const Detail = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between w-full gap-4 sm:gap-10">
-      <div className="flex flex-col px-10 lg:px-20 py-10 gap-6 justify-between text-black bg-white rounded-3xl">
+    <div className="flex flex-col lg:flex-row justify-center w-full gap-4">
+      <div className="flex flex-col px-10 py-6 lg:px-20 lg:py-10 gap-6 justify-between text-black bg-white rounded-3xl">
         <div className="flex justify-between items-center">
           <h2 className="font-bold text-[18px]">Top products</h2>
           <p className="flex items-center gap-2 text-[14px] text-[#858585]">
@@ -24,21 +24,27 @@ const Detail = () => {
             <div className="flex justify-start items-center gap-3">
               <div className="rounded-full w-[11px] h-[11px] bg-[#98D89E] mb-3" />
               <div className="flex flex-col justify-between">
-                <h2 className="font-bold text-[14px]">Basic Tees</h2>
+                <h2 className="font-bold text-[12px] sm:text-[14px]">
+                  Basic Tees
+                </h2>
                 <p className="text-[#858585] text-[12px] font-lato">55%</p>
               </div>
             </div>
             <div className="flex justify-start items-center gap-3">
               <div className="rounded-full w-[11px] h-[11px] bg-[#F6DC7D] mb-3" />
               <div className="flex flex-col justify-between">
-                <h2 className="font-bold sm:text-[14px]">Custom Short Pants</h2>
+                <h2 className="font-bold text-[12px] sm:text-[14px]">
+                  Custom Short Pants
+                </h2>
                 <p className="text-[#858585] text-[12px] font-lato">55%</p>
               </div>
             </div>
             <div className="flex justify-start items-center gap-3">
               <div className="rounded-full w-[11px] h-[11px] bg-[#EE8484] mb-3" />
               <div className="flex flex-col justify-between">
-                <h2 className="font-bold text-[14px]">Super Hoodies</h2>
+                <h2 className="font-bold text-[12px] sm:text-[14px]">
+                  Super Hoodies
+                </h2>
                 <p className="text-[#858585] text-[12px] font-lato">55%</p>
               </div>
             </div>
@@ -46,7 +52,7 @@ const Detail = () => {
         </div>
       </div>
 
-      <div className="flex flex-col px-10 lg:px-20 py-10 gap-6 justify-between text-black bg-white rounded-3xl">
+      <div className="flex flex-col px-10 py-6 lg:px-20 lg:py-10 gap-6 justify-between text-black bg-white rounded-3xl">
         <div className="flex justify-between items-center">
           <h2 className="font-bold text-[18px]">Today's schedule</h2>
           <p className="flex items-center gap-2 text-[14px] text-[#858585]">

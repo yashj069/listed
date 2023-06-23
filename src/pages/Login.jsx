@@ -10,7 +10,7 @@ const Login = () => {
       </div>
       <div className="flex flex-col mt-14 w-full gap-6 justify-center items-center">
         <div className="flex flex-col justify-center gap-4">
-          <div className="flex flex-col justify-between items-start px-6">
+          <div className="flex flex-col justify-between items-start px-6 gap-2">
             <h2 className="text-[18px] sm:text-[36px] text-black font-bold sm:leading-[43.88px]">
               Sign In
             </h2>
@@ -33,7 +33,7 @@ const Login = () => {
                   Email Address
                 </h1>
                 <input
-                  className="bg-[#F5F5F5] w-[280px] sm:w-[325px] h-[40px] px-6 rounded-xl"
+                  className="bg-[#EAEAEA] w-[280px] sm:w-[325px] h-[40px] px-6 rounded-xl"
                   placeholder="Email..."
                 />
               </div>
@@ -42,11 +42,11 @@ const Login = () => {
                   Password
                 </h1>
                 <input
-                  className="bg-[#F5F5F5] w-[280px] sm:w-[325px] h-[40px] px-6 rounded-xl"
+                  className="bg-[#EAEAEA] w-[280px] sm:w-[325px] h-[40px] px-6 rounded-xl"
                   placeholder="Password..."
                 />
               </div>
-              <p className="text-[#346BD4]">Forgot password?</p>
+              <p className="text-[#346BD4] cursor-pointer">Forgot password?</p>
               <button className="bg-black rounded-xl w-[280px] sm:w-[325px] h-[40px] font-bold text-white">
                 Sign In
               </button>
@@ -54,7 +54,7 @@ const Login = () => {
           </div>
           <p className="text-[#858585] mx-auto">
             Don’t have an account?{" "}
-            <span className="text-[#346BD4]">Register here</span>
+            <span className="text-[#346BD4] cursor-pointer">Register here</span>
           </p>
         </div>
       </div>

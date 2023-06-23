@@ -6,7 +6,7 @@ import Header from "../components/Header";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-between gap-8 w-full py-2">
+    <div className="flex flex-col justify-between gap-4 lg:gap-6 w-full py-2">
       <Header />
       <Card />
       <Chart />
