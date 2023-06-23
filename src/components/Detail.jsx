@@ -36,7 +36,7 @@ const Detail = () => {
                 <h2 className="font-bold text-[12px] sm:text-[14px]">
                   Custom Short Pants
                 </h2>
-                <p className="text-[#858585] text-[12px] font-lato">55%</p>
+                <p className="text-[#858585] text-[12px] font-lato">31%</p>
               </div>
             </div>
             <div className="flex justify-start items-center gap-3">
@@ -45,7 +45,7 @@ const Detail = () => {
                 <h2 className="font-bold text-[12px] sm:text-[14px]">
                   Super Hoodies
                 </h2>
-                <p className="text-[#858585] text-[12px] font-lato">55%</p>
+                <p className="text-[#858585] text-[12px] font-lato">14%</p>
               </div>
             </div>
           </div>
