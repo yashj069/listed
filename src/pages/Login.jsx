@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { auth, provider } from "../Firebase";
+import { signInWithPopup } from "firebase/auth";
+import { Navigate, useNavigate } from "react-router-dom";
+import google from "../assets/google-icon 1.png";
+import apple from "../assets/apple 1.png";
 
 const Login = () => {
+  const [value, setValue] = useState("");
+  const navigate = useNavigate();
+  const [authenticated, setauthenticated] = useState(
+    localStorage.getItem(localStorage.getItem("authenticated") || false)
+  );
+  const handleClick = () => {
+    signInWithPopup(auth, provider)
+      .then((data) => {
+        const profilePic = data.user.photoURL;
+        const email = data.user.email;
+        setValue(data.user.email);
+        localStorage.setItem("email", email);
+        localStorage.setItem("pic", profilePic);
+        localStorage.setItem("authenticated", true);
+        setauthenticated(true);
+        navigate("/home");
+      })
+      .catch((err) => navigate("/"));
+  };
+  if (authenticated) {
+    return <Navigate replace to="/home" />;
+  }
+
   return (
     <div className="flex flex-col sm:flex-row justify-between bg-[#F5F5F5] items-center w-full ">
       <div className="flex h-[60px] sm:h-[80px] sm:min-h-screen justify-center items-center w-full sm:w-[65%] bg-black">
@@ -19,11 +47,20 @@ const Login = () => {
             </p>
           </div>
           <div className="flex justify-center items-center gap-[10px]">
-            <button className="text-[12px] text-[#858585] w-[160px] sm:w-[180px] border-[2px] rounded-lg bg-white h-[40px] px-6 border-black">
-              Sign in with Google
+            <button
+              onClick={handleClick}
+              className="text-[12px] text-[#858585] w-[160px] sm:w-[180px] rounded-lg bg-white h-[40px] px-6 "
+            >
+              <div className="flex justify-between items-center">
+                <img src={google} alt="google" className="w-[14px] h-[14px]" />
+                Sign in with Google
+              </div>
             </button>
-            <button className="text-[12px] text-[#858585] w-[150px] sm:w-[180px] border-[2px] rounded-lg bg-white h-[40px] px-6 border-black">
-              Sign in with Apple
+            <button className="text-[12px] text-[#858585] w-[150px] sm:w-[180px] rounded-lg bg-white h-[40px] px-6 ">
+              <div className="flex justify-between items-center">
+                <img src={apple} alt="google" className="w-[14px] h-[14px]" />
+                Sign in with Apple
+              </div>
             </button>
           </div>
           <div className="flex bg-white rounded-2xl flex-col items-center mx-auto">

@@ -1,5 +1,8 @@
 import React from "react";
 import down from "../assets/downarrow.png";
+import green from "../assets/line_chart_1.png";
+import pink from "../assets/line_chart_2.png";
+import Chart1 from "./Chart1";
 
 const Chart = () => {
   return (
@@ -25,8 +28,10 @@ const Chart = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex flex-col justify-between gap-4">
+        {/* <div className="absolute flex w-[70%] bg-black"> */}
+        <Chart1 />
+        {/* </div> */}
+        {/* <div className="flex flex-col justify-between gap-4">
           <div className="flex justify-between items-center gap-4">
             <p className="text-[#858585] font-lato text-[14px]">500</p>
             <div className="w-full h-[1px] bg-[#858585]" />
@@ -58,7 +63,7 @@ const Chart = () => {
           <p>Week 2</p>
           <p>Week 3</p>
           <p>Week 4</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

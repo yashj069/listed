@@ -29,7 +29,7 @@ const Card = () => {
           <p className="font-lato text-[11px] sm:text-[14px]">
             Total Transactions
           </p>
-          <h1 className="font-bold text-[16px] md:text-[24px]">$2,129,430</h1>
+          <h1 className="font-bold text-[16px] md:text-[24px]">1520</h1>
         </div>
       </div>
 
@@ -39,7 +39,7 @@ const Card = () => {
         </div>
         <div className="flex flex-col justify-between">
           <p className="font-lato text-[14px]">Total Likes</p>
-          <h1 className="font-bold text-[18px] md:text-[24px]">$2,129,430</h1>
+          <h1 className="font-bold text-[18px] md:text-[24px]">9721</h1>
         </div>
       </div>
 
@@ -49,7 +49,7 @@ const Card = () => {
         </div>
         <div className="flex flex-col justify-between">
           <p className="font-lato text-[14px]">Total Users</p>
-          <h1 className="font-bold text-[18px] md:text-[24px]">$2,129,430</h1>
+          <h1 className="font-bold text-[18px] md:text-[24px]">892</h1>
         </div>
       </div>
     </div>

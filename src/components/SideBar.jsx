@@ -4,7 +4,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import Items from "./Items";
 
 const SideBar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     console.log(open);
@@ -27,7 +27,11 @@ const SideBar = () => {
 
       {/* Mobile View */}
 
-      <div className={`${open ? "flex" : "hidden"} sm:hidden justify-end`}>
+      <div
+        className={`${
+          open ? "flex" : "hidden"
+        } sm:hidden justify-end pb-2 px-2`}
+      >
         <Items />
       </div>
 
