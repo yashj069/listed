@@ -37,7 +37,6 @@ const Chart1 = () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
-  console.log(windowSize);
 
   const data = {
     labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
