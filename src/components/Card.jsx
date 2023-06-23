@@ -6,7 +6,7 @@ import camera from "../assets/camera.png";
 
 const Card = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-2 lg:gap-10  items-center">
+    <div className="flex flex-wrap justify-center md:justify-start gap-2 lg:gap-10  items-center">
       <div className="flex flex-col text-black py-5 bg-[#DDEFE0] w-[140px] h-[100px] sm:w-[170px] md:w-[221.053px] md:h-[120px] rounded-3xl px-6">
         <div className="flex justify-end">
           <img src={camera} className="w-[26.4px] h-[24px]" alt="camera" />
